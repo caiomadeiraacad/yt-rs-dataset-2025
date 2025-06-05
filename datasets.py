@@ -80,7 +80,7 @@ def get_historic_info(hist_type='search'):
     return cell_info
         
         
-# possui uma unica linha dai posso usar iloc
+# possui uma unica linha dai posso usar iloc[0]
 comments_df['Profile Name/ID'] = channel_df['Channel Title (Original)'].iloc[0] + " " + channel_df['Channel ID'].iloc[0]
 
 comments_df = comments_df[['Profile Name/ID', 'Video ID', 'Comment Create Timestamp', 'Comment Text']]
@@ -115,7 +115,7 @@ profile_df = pd.concat([combined_df, comments_df], ignore_index=True)
 profile_df = profile_df.sort_values(by='Date').reset_index(drop=True)
 
 # juntar coluna interaction com text
-profile_df = profile_df.merge(profile_df['Interaction'], profile_df['Text'])
+#profile_df = profile_df.merge(profile_df['Interaction'], profile_df['Text'])
 
 # :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 # Lidando com NaN
