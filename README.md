@@ -15,3 +15,5 @@ Criar uma coluna dizendo se é shorts ou não.
 
 Encontrar o que hpá de detecção de emoção da google pros comentários pra inferir com o que eh classificado na vida real.
 Colocar o dataset em um apendice durante o artigo.
+
+"A análise qualitativa é um método de investigação que visa compreender a profundidade e a riqueza dos dados, focando em aspectos não numéricos como opiniões, sentimentos e experiências. Diferentemente da análise quantitativa, que se concentra em números e estatísticas, a análise qualitativa explora a qualidade e o significado dos dados."
