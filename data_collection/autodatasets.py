@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 import numpy as np
 import random
-from web_scrap import extract_keywords
+from web_scrap import extract_meta
 import asyncio
 from dotenv import load_dotenv
 import os
@@ -219,7 +219,7 @@ if GET_TAGS:
     keywords = []
     for id in profile_df['Video ID']:
         url_video = f"https://www.youtube.com/watch?v={id}"
-        keywords.append(asyncio.run(extract_keywords(url_video)))
+        keywords.append(asyncio.run(extract_meta(url_video)))
         print("Keywords do vídeo:", keywords)        
     profile_df['Tags'] = keywords
 
